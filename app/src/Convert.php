@@ -48,7 +48,7 @@ class Convert
      * Which format to convert files to.
      * @var string
      */
-    private $format = 'gfm';
+    private $format = 'markdown_github';
 
     /**
      * Holds the count of how many files converted
@@ -297,7 +297,7 @@ class Convert
     {
         $this->setOption('filename', $options, null);
         $this->setOption('output', $options, 'output');
-        $this->setOption('format', $options, 'gfm');
+        $this->setOption('format', $options, 'markdown_github');
         $this->setOption('flatten', $options);
         $this->setOption('indexes', $options);
         $this->setOption('addmeta', $options);
